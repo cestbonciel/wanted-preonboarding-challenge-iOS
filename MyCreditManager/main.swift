@@ -6,36 +6,42 @@
 //
 
 import Foundation
+
+
+let exit: String = readLine()!
+
+//let str = "X"
+//var studentName: [String:String] = [:]
+//if let name: String = readLine(){
+//	print("\(name)")
+//}
+
+
 let condition1 = """
 원하는 기능을 입력해주세요
 1: 학생추가, 2: 학생삭제, 3: 성적추가(변경), 4: 성적삭제, 5: 평점보기, X: 종료
 """
 print(condition1)
+var select = Int(readLine()!)!
+repeat
+{
+	let condition1 = """
+	원하는 기능을 입력해주세요
+	1: 학생추가, 2: 학생삭제, 3: 성적추가(변경), 4: 성적삭제, 5: 평점보기, X: 종료
+	"""
+	print(condition1)
+	let input = Int(readLine()!)!
+	 
+} while select == Int("X")
+	print("프로그램 종료!")
 
-let exit = "X"
-
-//let str = "X"
-var studentName: [String] = []
-let selectOne = Int(readLine()!)!
-// optional 에 다운캐스팅 해야하나?
-if selectOne != nil {
-//	(Int((readLine() ?? nil)!)! != nil) != nil
-//	while input != str {
-//		print("input: \(input)")
-//	let selectOne = Int(readLine()!)!
-		let name = readLine()!
-		if selectOne == 1  {
-			print("추가할 학생의 이름을 입력해주세요.")
-			if studentName.contains(name) == false  {
-				studentName.append(name)
-				print("\(name) 학생을 추가했습니다.")
-			}
-		} else {
-	
-			print("\(name)은 이미 존재하는 학생입니다. 추가하지 않습니다.")
-		}
-//	}
-} else {
-	print("입력이 잘못되었습니다. 다시 확인해주세요.")
-}
-print("프로그램을 종료한다.")
+// 데이터 입력 조건 변수, 상수들
+let name: String = readLine()!
+let gradeTitle: [String] = ["Python", "Swift", "JAVA", "C", "C++"]
+let gradePoint: [String: Float] = ["A":4.0,"A+":4.5,"B":3.0,"B+":3.5,"C":2.0,"C+":2.5,"D":1.0,"D+":1.5]
+// 성적 관리 key, value
+var studentGrade: [String: Any] = [
+	"studentName": name,
+	"gradeName":gradeTitle,
+	"gradePoint" : gradePoint
+]
