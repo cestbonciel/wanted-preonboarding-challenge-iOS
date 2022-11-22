@@ -38,9 +38,9 @@ repeat
 // 데이터 입력 조건 변수, 상수들
 let name: String = readLine()!
 let gradeTitle: [String] = ["Python", "Swift", "JAVA", "C", "C++"]
-let gradePoint: [String: Float] = ["A":4.0,"A+":4.5,"B":3.0,"B+":3.5,"C":2.0,"C+":2.5,"D":1.0,"D+":1.5]
+let gradePoint: [String : Float] = ["A":4.0,"A+":4.5,"B":3.0,"B+":3.5,"C":2.0,"C+":2.5,"D":1.0,"D+":1.5]
 // 성적 관리 key, value
-var studentGrade: [String: Any] = [
+var studentGrade: [String : Any] = [
 	"studentName": name,
 	"gradeName":gradeTitle,
 	"gradePoint" : gradePoint
