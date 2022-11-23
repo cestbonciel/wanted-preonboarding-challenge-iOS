@@ -10,11 +10,6 @@ import Foundation
 
 let exit: String = readLine()!
 
-//let str = "X"
-//var studentName: [String:String] = [:]
-//if let name: String = readLine(){
-//	print("\(name)")
-//}
 
 
 let condition1 = """
